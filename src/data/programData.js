@@ -1,6 +1,6 @@
 export const traditionalProgram = [
   {
-    icon: "🌿",
+    icon: "\uD83C\uDF3F",
     heading: "Opening & Worship",
     badge: "2:00 PM",
     items: [
@@ -10,7 +10,7 @@ export const traditionalProgram = [
     ],
   },
   {
-    icon: "💜",
+    icon: "\uD83D\uDC9E",
     heading: "Traditional Rites",
     badge: "2:45 PM",
     items: [
@@ -18,11 +18,11 @@ export const traditionalProgram = [
       { title: "Presentation of the Bride", description: "Victoria Unekwuojo Obochi is presented", time: "3:10 PM" },
       { title: "Traditional Rites & Exchange of Gifts", description: "Bride price and customary items presented", time: "3:30 PM" },
       { title: "Wine Carrying Ceremony", description: "The bride searches for her groom among the guests", time: "4:00 PM" },
-      { title: "Order of Photographs", description: "Couple · Both Families · Wedding Party · Group Photos", time: "4:30 PM" },
+      { title: "Order of Photographs", description: "Couple | Both Families | Wedding Party | Group Photos", time: "4:30 PM" },
     ],
   },
   {
-    icon: "🎉",
+    icon: "\uD83C\uDF89",
     heading: "Celebration",
     badge: "5:00 PM",
     items: [
@@ -36,7 +36,7 @@ export const traditionalProgram = [
 
 export const churchProgram = [
   {
-    icon: "⛪",
+    icon: "\u266A",
     heading: "Processional & Worship",
     badge: "10:00 AM",
     items: [
@@ -47,7 +47,7 @@ export const churchProgram = [
     ],
   },
   {
-    icon: "📖",
+    icon: "\uD83D\uDCD6",
     heading: "The Word & Vows",
     badge: "11:00 AM",
     items: [
@@ -58,13 +58,13 @@ export const churchProgram = [
     ],
   },
   {
-    icon: "📸",
+    icon: "\uD83D\uDCF8",
     heading: "Photos & Departure",
     badge: "12:10 PM",
     items: [
-      { title: "Order of Photographs", description: "Couple · Both Families · Wedding Party · Congregation", time: "12:10 PM" },
+      { title: "Order of Photographs", description: "Couple | Both Families | Wedding Party | Congregation", time: "12:10 PM" },
       { title: "Signing of the Marriage Register", description: "Official signing witnessed by family and officiants", time: "12:35 PM" },
-      { title: "Recessional & Departure to Reception", description: "Dew of Hermon, Plot 1 & 2, Egypt Road, Barnawa, Kaduna — 2:00 PM", time: "12:45 PM" },
+      { title: "Recessional & Departure to Reception", description: "Dew of Hermon, Plot 1 & 2, Egypt Road, Barnawa, Kaduna - 2:00 PM", time: "12:45 PM" },
     ],
   },
 ];

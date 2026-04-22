@@ -16,22 +16,22 @@ export default function Hero() {
         </div>
       </div>
 
-      <p className="full-names">Unekwuojo Obochi &nbsp;·&nbsp; Enejo Akowe</p>
+      <p className="full-names">Unekwuojo Obochi &nbsp;|&nbsp; Enejo Akowe</p>
 
       <div className="divider-floral">
         <span className="divider-line" />
-        <span className="divider-star">✦</span>
+        <span className="divider-star">{"\u2726"}</span>
         <span className="divider-line" />
       </div>
 
       <div className="event-dates">
         <div className="event-pill">
           <span className="pill-label">Traditional</span>
-          <span className="pill-date">Friday, 5th June 2026 · 2pm</span>
+          <span className="pill-date">Friday, 5 June 2026 | 2:00 PM</span>
         </div>
         <div className="event-pill">
           <span className="pill-label">Church</span>
-          <span className="pill-date">Saturday, 6th June 2026 · 10am</span>
+          <span className="pill-date">Saturday, 6 June 2026 | 10:00 AM</span>
         </div>
       </div>
     </div>

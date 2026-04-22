@@ -46,7 +46,9 @@ export default function ProgramSection({ title, subtitle, venue, blocks }) {
         <span className="section-eyebrow">Order of Service</span>
         <h3 className="section-title">{title}</h3>
         <p className="section-meta">{subtitle}</p>
-        <p className="section-venue">📍 {venue}</p>
+        <p className="section-venue">
+          {"\uD83D\uDCCD"} {venue}
+        </p>
       </div>
 
       {blocks.map((block, i) => (
