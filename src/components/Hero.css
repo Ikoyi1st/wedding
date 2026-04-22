@@ -1,0 +1,135 @@
+.hero {
+  background: var(--plum);
+  border-radius: 4px;
+  padding: 60px 48px 52px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 60px #3d0a3f55;
+  animation: fadeUp 0.7s ease both;
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero-glow-top {
+  top: -70px; right: -70px;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, #c0369c44 0%, transparent 65%);
+}
+.hero-glow-bottom {
+  bottom: -60px; left: -60px;
+  width: 240px; height: 240px;
+  background: radial-gradient(circle, #9010a044 0%, transparent 65%);
+}
+
+.hero-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: var(--lilac);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  opacity: 0.85;
+  position: relative;
+  z-index: 1;
+}
+
+.names {
+  line-height: 1;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(54px, 12vw, 90px);
+  color: var(--white);
+  display: block;
+}
+.name-victoria { font-style: italic; font-weight: 400; }
+
+.names-row2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+.ampersand {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(46px, 10vw, 74px);
+  color: var(--magenta);
+  font-style: italic;
+  display: inline-block;
+  line-height: 1;
+}
+.name-salem {
+  font-weight: 700;
+  letter-spacing: -1px;
+  display: inline-block;
+}
+
+.full-names {
+  color: var(--lilac);
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.divider-floral {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 300px;
+  margin: 0 auto 28px;
+  position: relative;
+  z-index: 1;
+}
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--lilac), transparent);
+  display: block;
+}
+.divider-star {
+  color: var(--magenta);
+  font-size: 16px;
+}
+
+.event-dates {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.event-pill {
+  background: rgba(192, 54, 156, 0.15);
+  border: 1px solid rgba(192, 54, 156, 0.38);
+  border-radius: 40px;
+  padding: 9px 22px;
+  text-align: center;
+}
+.pill-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--magenta);
+  display: block;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+.pill-date {
+  color: var(--white);
+  font-size: 13px;
+  font-style: italic;
+}

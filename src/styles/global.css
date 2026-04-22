@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Cinzel:wght@400;600&display=swap');
+
+:root {
+  --plum: #3d0a3f;
+  --deep-purple: #5a1060;
+  --magenta: #c0369c;
+  --lilac: #d4a8e0;
+  --soft-lilac: #ead6f2;
+  --grey: #8a8a9a;
+  --cream: #fdf8ff;
+  --white: #ffffff;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--soft-lilac);
+  font-family: 'Cormorant Garamond', serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app { position: relative; min-height: 100vh; }
+
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+.blob-top {
+  top: -130px; right: -130px;
+  width: 440px; height: 440px;
+  background: radial-gradient(circle, #e060c870 0%, #c0369c33 55%, transparent 70%);
+}
+.blob-bottom {
+  bottom: -110px; left: -110px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #d070d870 0%, #a020a033 60%, transparent 75%);
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 72px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── COLORS STRIP ── */
+.colors-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 0;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+.color-dot {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px #0003;
+  display: inline-block;
+}
+.strip-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+/* ── TAB SWITCHER ── */
+.tab-switcher {
+  display: flex;
+  gap: 0;
+  margin: 36px 0 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px #3d0a3f22;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+.tab-btn {
+  flex: 1;
+  padding: 16px 24px;
+  border: none;
+  background: white;
+  color: var(--grey);
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-bottom: 3px solid transparent;
+}
+.tab-btn:first-child { border-right: 1px solid var(--soft-lilac); }
+.tab-btn:hover { background: var(--soft-lilac); color: var(--deep-purple); }
+.tab-btn.active {
+  background: var(--plum);
+  color: var(--lilac);
+  border-bottom-color: var(--magenta);
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
