@@ -6,7 +6,7 @@
   --magenta: #c0369c;
   --lilac: #d4a8e0;
   --soft-lilac: #ead6f2;
-  --grey: #8a8a9a;
+  --grey: #3d0a3f;
   --cream: #fdf8ff;
   --white: #ffffff;
 }
@@ -67,7 +67,7 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 9px;
   letter-spacing: 2.5px;
-  color: var(--grey);
+  color: var(--plum);
   text-transform: uppercase;
 }
 
