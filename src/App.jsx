@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Hero from "./components/Hero";
 import FamilyCard from "./components/FamilyCard";
+import PhotoGallery from "./components/PhotoGallery";
 import ProgramSection from "./components/ProgramSection";
 import Closing from "./components/Closing";
 import { traditionalProgram, churchProgram } from "./data/programData";
@@ -25,6 +26,7 @@ export default function App() {
         </div>
 
         <FamilyCard />
+        {/* <PhotoGallery /> */}
 
         <div className="tab-switcher">
           <button

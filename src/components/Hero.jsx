@@ -1,8 +1,13 @@
+import heroBackground from "../assets/images/couple-hero-bw.jpeg";
 import "./Hero.css";
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <div
+      className="hero"
+      style={{ "--hero-image": `url(${heroBackground})` }}
+    >
+      <div className="hero-overlay" />
       <div className="hero-glow hero-glow-top" />
       <div className="hero-glow hero-glow-bottom" />
 
