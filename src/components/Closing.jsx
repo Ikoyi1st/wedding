@@ -12,7 +12,7 @@ export default function Closing() {
       <div className="closing-rsvp">
         <span className="rsvp-label">RSVP</span>
         <span className="rsvp-sep">|</span>
-        <a href="tel:07064315952" className="rsvp-number">07064315952</a>
+        <a href="tel:07064315952" className="rsvp-number">08168040126 || 08066638989</a>
       </div>
 
       <div className="closing-divider">
@@ -22,7 +22,7 @@ export default function Closing() {
       </div>
 
       <p className="closing-footer">
-        Victoria &amp; Salem &nbsp;|&nbsp; 2026
+        ViSa &nbsp;|&nbsp; 2026
       </p>
     </div>
   );

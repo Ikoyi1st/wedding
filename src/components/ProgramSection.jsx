@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ProgramSection.css";
 
-function ProgramItem({ number, title, description, time, index }) {
+function ProgramItem({ number, title, description, details, dropdown, time, index }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -16,6 +16,43 @@ function ProgramItem({ number, title, description, time, index }) {
       <div className="item-content">
         <h5 className="item-title">{title}</h5>
         {description && <p className="item-desc">{description}</p>}
+        {details?.length ? (
+          <div className="item-details">
+            {details.map((detail, detailIndex) => (
+              <p key={detailIndex} className="item-detail">
+                {detail}
+              </p>
+            ))}
+          </div>
+        ) : null}
+        {dropdown ? (
+          <details className="item-dropdown">
+            <summary className="item-dropdown-summary">{dropdown.label}</summary>
+            <div className="item-dropdown-body">
+              {dropdown.lyrics?.length ? (
+                <div className="item-dropdown-lyrics">
+                  {dropdown.lyrics.map((verse, verseIndex) => (
+                    <p key={verseIndex} className="item-dropdown-verse">
+                      {verse}
+                    </p>
+                  ))}
+                </div>
+              ) : null}
+              {dropdown.preview && <p className="item-dropdown-preview">{dropdown.preview}</p>}
+              {dropdown.note && <p className="item-dropdown-note">{dropdown.note}</p>}
+              {dropdown.sourceUrl ? (
+                <a
+                  className="item-dropdown-link"
+                  href={dropdown.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {dropdown.sourceLabel || "View source"}
+                </a>
+              ) : null}
+            </div>
+          </details>
+        ) : null}
       </div>
       {time && <div className="item-time">{time}</div>}
     </div>
