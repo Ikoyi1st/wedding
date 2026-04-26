@@ -28,32 +28,15 @@ export default function App() {
         <FamilyCard />
         {/* <PhotoGallery /> */}
 
-        <div className="tab-switcher">
-          <button
-            type="button"
-            className={`tab-btn ${activeTab === "traditional" ? "active" : ""}`}
-            onClick={() => setActiveTab("traditional")}
-            aria-pressed={activeTab === "traditional"}
-          >
-            Traditional Wedding
-          </button>
-          <button
-            type="button"
-            className={`tab-btn ${activeTab === "church" ? "active" : ""}`}
-            onClick={() => setActiveTab("church")}
-            aria-pressed={activeTab === "church"}
-          >
-            Church Wedding
-          </button>
-        </div>
+       
 
-        {activeTab === "traditional" ? (
+        {activeTab === "church" ? (
           <ProgramSection
             key="traditional"
-            title="Traditional Wedding"
-            subtitle="Friday, 5 June 2026 | 2:00 PM"
-            venue="Pst. Samuel Obochi's Compound, Road 1, Durumi New Extension, Gonin-Gora, Kaduna."
-            blocks={traditionalProgram}
+            title="Church Wedding"
+            subtitle="Saturday, 6 June 2026 | 10:00 AM"
+           venue="Overflowing Life Christian Centre, Road 1, Durumi New Extension, Gonin-Gora, Kaduna."
+            blocks={churchProgram}
           />
         ) : (
           <ProgramSection

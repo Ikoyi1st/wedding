@@ -15,7 +15,7 @@
 
 body {
   background: var(--soft-lilac);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'futura', serif;
   min-height: 100vh;
   overflow-x: hidden;
 }

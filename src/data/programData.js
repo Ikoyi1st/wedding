@@ -108,7 +108,7 @@ export const churchProgram = [
     heading: "Photos & Departure",
     badge: "12:10 PM",
     items: [
-      { title: "Order of Photographs", description: "Couple | Both Families | Wedding Party | Congregation", time: "12:10 PM" },
+      { title: "Order of Photographs", description: "Couple | Both Families | Congregation", time: "12:10 PM" },
       { title: "Signing of the Marriage Register", description: "Official signing witnessed by family and officiants", time: "12:35 PM" },
       {
         title: "Recessional Hymn: Great Is Thy Faithfulness",
